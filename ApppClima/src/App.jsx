@@ -65,7 +65,7 @@ function App() {
   const [error, setError] = useState(false);
   const [historial, setHistorial] = useState([]);
 
-  const API_KEY = "30d38b26954359266708f92e1317dac0";
+  const API_KEY = "Pon tu api key";
   const URL = `https://api.openweathermap.org/data/2.5/weather?q=${ciudad}&lang=es&units=metric&appid=${API_KEY}`;
 
   useEffect(() => {
