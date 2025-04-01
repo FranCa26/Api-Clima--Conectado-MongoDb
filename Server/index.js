@@ -4,9 +4,9 @@ const cors = require("cors");
 const app = express();
 const puerto = 3001;
 
-//middlewares 
-app.use(cors()); // Permite que los recursos de tu servidor sean accesibles desde diferentes dominios/orígenes.(app frontend y móviles accedan a tu API)
-app.use(express.json()); //Parsea a Json 
+
+app.use(cors()); 
+app.use(express.json()); 
 
 // Conexión a MongoDB
 mongoose.connect("mongodb://localhost:27017/HistorialCiudades", {
